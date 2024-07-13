@@ -31,6 +31,9 @@ jobs:
     - name: Build with Gradle Wrapper
       run: ./gradlew build
 
+    - name: Paperclip
+      run: ./gradlew paperclip
+
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4.3.4
       with:
